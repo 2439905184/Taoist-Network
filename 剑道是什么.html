@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>剑道</title>
 </head>
 <body>
+    <h2>剑道是什么</h2>
     <a href="https://baike.baidu.com/link?url=pF-VUF6RG0WRfQBiUwztJL511pwNLn6DTBREByGcGx38M9vmNhX8fj9pxb7y9w4LtR13j6eZsTxA6P19g8Yll_">传统的竞技性器械武术</a>
+    <h2>剑道</h2>    
+    <ol id="json_list">
+    </ol>
+    <script>
+        var json = {
+            "科普—剑道：八段的世界（熟肉）":"https://www.bilibili.com/video/BV1rt411t78V/",
+            "剑即是心，心即是剑！带你了解中国剑道强者的真实故事":"https://www.bilibili.com/video/BV1kh411m7bJ/?vd_source=2f740c00cfe14d9860c2829322f9898f"
+        }
+        function jsonToOl(p_json)
+        {
+            for (var title in json) 
+            {  
+            var link = json[title];  
+            var listItem = document.createElement('li');  
+            var listText = document.createTextNode(title);  
+            var linkElement = document.createElement('a');  
+            linkElement.href = link;  
+            linkElement.appendChild(listText);  
+            listItem.appendChild(linkElement);  
+            var ol = document.getElementById("json_list")
+            ol.appendChild(listItem);  
+            }
+        }
+        jsonToOl(json)
+    </script>
 </body>
 </html>
