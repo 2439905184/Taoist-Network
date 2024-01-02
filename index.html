@@ -14,9 +14,46 @@
         {
             border: solid 2px blue;
         }
+        .side-menu
+        {
+            border: solid 1px black;
+            width: 300px;
+        }
     </style>
+    <script src="js/jsonToOl.js"></script>
 </head>
 <body>
+    <div class="side-menu">
+        <h2>词条解释</h2>
+        <ol id="list">
+        </ol>
+    </div>
+    
+    <div class="side-menu">
+        <h2>名著</h2>
+        <ol id="list2">
+        </ol>
+    </div>
+    
+    <script>
+        var json = 
+        {
+            "云游":"云游.html",
+            "冲煞":"https://zhidao.baidu.com/question/465855005.html",
+            "禅定":"https://www.bilibili.com/video/BV1fk4y1M78C/?spm_id_from=333.337.search-card.all.click",
+            "剑道":"剑道.html"
+        }
+        var json2 = 
+        {
+            "炁体源流":"https://book.tinynews.org/books/11147502"
+        }
+        var dom = document.getElementById("list")
+        var dom2 = document.getElementById("list2")
+        jsonToOl(json,dom)
+        jsonToOl(json,dom2)
+    </script>
+</body>
+<!-- <body>
     <h2>天</h2>
 
     <h2>人</h2>
@@ -60,7 +97,7 @@
 
     <h2>注意事项</h2>
     <p>感性事情搞多了损伤肉体，精气神。需要记得回归理性现实。</p>
-    <p>盆子</p>
+    <p>盆子</p> -->
     <!-- <ol> -->
         <!-- <li>白蛇传里面涉及道行，人和妖精结婚</li> -->
     <!-- </ol> -->
@@ -103,5 +140,4 @@
     <a href="三界法制道义政治文化面貌.html">三界法制道义政治文化面貌.html</a>
 
     <p>打坐的效果可能与季节和节气有关系</p> -->
-</body>
 </html>
