@@ -1,9 +1,9 @@
 // p_root = <ol> object
 function jsonToOl(p_json,p_root)
 {
-    for (var title in json) 
+    for (var title in p_json) 
     {  
-    var link = json[title];  
+    var link = p_json[title];  
     var listItem = document.createElement('li');  
     var listText = document.createTextNode(title);  
     var linkElement = document.createElement('a');  
