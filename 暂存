@@ -1,11 +1,5 @@
  <script>
-        var json = 
-        {
-            "云游":"云游.html",
-            "冲煞":"https://zhidao.baidu.com/question/465855005.html",
-            "禅定":"https://www.bilibili.com/video/BV1fk4y1M78C/?spm_id_from=333.337.search-card.all.click",
-            "剑道":"剑道.html"
-        }
+        
         var json2 = 
         {
             "炁体源流":"https://book.tinynews.org/books/11147502"
