@@ -102,12 +102,21 @@
         
         <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script> 
+    var citiao = 
+        {
+            "云游":"云游.html",
+            "冲煞":"https://zhidao.baidu.com/question/465855005.html",
+            "禅定":"https://www.bilibili.com/video/BV1fk4y1M78C/?spm_id_from=333.337.search-card.all.click",
+            "剑道":"剑道.html"
+        }
     var zydzlxmd = {
     	    "b站武当袁老师":"UID:531381429",
 	        "b站武当陈师行":"UID:514019783"
         }
-        // var dom3 = document.getElementById("#list3")
-        // jsonToOl(zydzlxmd,dom3)
+    var citiaodom = document.getElementById("list")
+    // var dom3 = document.getElementById("#list3")
+    // jsonToOl(zydzlxmd,dom3)
+    jsonToOl(citiao,citiaodom)
     </script>
 </body>
 </html>
